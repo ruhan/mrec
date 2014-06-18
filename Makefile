@@ -4,7 +4,7 @@ NOSETESTS ?= nosetests
 
 # Compilation...
 
-CYTHONSRC= $(wildcard mrec/*/*.pyx)
+CYTHONSRC= $(wildcard mrec/*/*/*.pyx)
 CSRC= $(CYTHONSRC:.pyx=.cpp)
 
 inplace: cython
